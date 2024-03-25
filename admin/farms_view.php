@@ -42,7 +42,8 @@
                 <tr>
                     <th>No</th>
                     <th>Name</th>
-                    <th>Surname</th>
+                    <th>Username</th>
+                    <th>Password</th>
                     <th>Phone</th>
                     <th>Region</th>
                     <th>Joined Date</th>
@@ -58,8 +59,9 @@
                           ?>
                           <tr>
                               <td><?php echo $a;?></td> 
-                            <td><?php echo $row['name'];?></td> 
-                            <td><?php echo $row['surname'];?></td>   
+                            <td><?php echo $row['fname'];?></td> 
+                            <td><?php echo $row['username'];?></td>   
+                            <td><?php echo $row['password'];?></td>
                             <td><?php echo $row['phone'];?></td>
                             <td><?php echo $row['region'];?></td>
                             <td><?php echo $row['joined_date'];?></td>  

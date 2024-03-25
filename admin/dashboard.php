@@ -72,9 +72,9 @@
   
            
             </div>
-           <?php require('weather.php');?>
+           
             <div class="line"></div>
-            
+            <?php require('weather.php');?>
              <div class="line"></div>
                 <footer>
             <p class="text-center sm-sys">

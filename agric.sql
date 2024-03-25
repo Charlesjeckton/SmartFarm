@@ -41,7 +41,7 @@ CREATE TABLE `agri_tips` (
 --
 
 INSERT INTO `agri_tips` (`id`, `description`, `region`, `type`, `date_t`) VALUES
-(2, 'insecticide Thiamethoxam 30% SC, 21% SC, good control effect on rice planthopper Usage method 1. To control rice planthopper, 25% thiamethoxazine ', 'Harare', 'Agricultural Insecticides', '2020-01-12');
+(2, 'insecticide Thiamethoxam 30% SC, 21% SC, good control effect on rice planthopper Usage method 1. To control rice planthopper, 25% thiamethoxazine ', 'Rift-Valley', 'Agricultural Insecticides', '2024-03-25');
 
 -- --------------------------------------------------------
 
@@ -51,20 +51,22 @@ INSERT INTO `agri_tips` (`id`, `description`, `region`, `type`, `date_t`) VALUES
 
 CREATE TABLE `farmers` (
   `id` int(11) NOT NULL,
-  `name` varchar(20) NOT NULL,
-  `surname` varchar(20) NOT NULL,
+  `fname` varchar(20) NOT NULL,
+  `username` varchar(20) NOT NULL,
+  `password` varchar(64) NOT NULL,
   `phone` varchar(20) NOT NULL,
   `region` varchar(20) NOT NULL,
-  `joined_date` varchar(30) NOT NULL
+  `joined_date` varchar(30) NOT NULL,
+  `type` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `farmers`
 --
 
-INSERT INTO `farmers` (`id`, `name`, `surname`, `phone`, `region`, `joined_date`) VALUES
-(3, 'tapiwa', 'mhishi', '0775011617', 'Harare', '2020-01-12'),
-(5, 'Gideon', 'Machuve', '0775509424', 'Harare', '2020-01-12');
+INSERT INTO `farmers` (`id`, `fname`, `username`, `password`, `phone`, `region`, `joined_date`, `type`) VALUES
+(3, 'Clive Omoro', 'omosh', '12345', '0775011617', 'Nyanza', '2024-03-25', 'user'),
+(5, 'Babu Owino',  'babu', '12345', '0775509424', 'Nairobi', '2024-03-25', 'user');
 
 -- --------------------------------------------------------
 
@@ -85,7 +87,7 @@ CREATE TABLE `forecasting` (
 --
 
 INSERT INTO `forecasting` (`id`, `tempa`, `region`, `daily`, `date_t`) VALUES
-(1, '24', 'Harare', 'partly Clouds', '12 Jan 2020');
+(1, '24', 'Rift-valley', 'partly Clouds', '12 March 2024');
 
 -- --------------------------------------------------------
 --
@@ -132,9 +134,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `surname`, `username`, `password`, `type`) VALUES
-(1, 'Jeckton', 'admin', 'admin', '827ccb0eea8a706c4c34a16891f84e7b', 'user'),
-(4, 'Rufus', 'rufus', 'rufus', '827ccb0eea8a706c4c34a16891f84e7b', 'user'),
-(5, 'Steve', 'steve', '', '827ccb0eea8a706c4c34a16891f84e7b', 'user');
+(1, 'Jeckton', 'admin', 'admin', '827ccb0eea8a706c4c34a16891f84e7b', 'admin'),
+(4, 'Rufus', 'rufus', 'rufus', '827ccb0eea8a706c4c34a16891f84e7b', 'admin'),
+(5, 'Steve', 'steve', '', '827ccb0eea8a706c4c34a16891f84e7b', 'admin');
 
 
 --

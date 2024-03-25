@@ -1,4 +1,4 @@
-.jumbotron{
+.charles{
     background:#00bd56;
     box-shadow: 0px 2px 13px 3px rgba(0,0,0,0.57);
     color:#ffb228;
@@ -7,21 +7,18 @@
     
 }
 
-.tendo{
+.jeckton{
     margin-top: 20px;
     margin-bottom: 10px;
     
 }
-.yam{
-    
-}
-.tendai{
+.omosh{
     background:#ffb228;
     color:#fafafa;
     border-radius: 25px;
     
 }
-.tendai:hover{
+.omosh:hover{
     background: #00bd56;
     border: 2px solid #ffb228;
     color:#fafafa;

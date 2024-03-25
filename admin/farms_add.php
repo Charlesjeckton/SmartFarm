@@ -77,7 +77,7 @@ require_once('../connect/session.php');
         <div class="row">
             <div class="col-md-12 ssm">
                 <div class="card">
-                    <p class="card-header sammac-media">Add Details </p>
+                    <p class="card-header deveops-cj">Add Details </p>
                     <div class="card-body">
                         <form action="farms_add.php" method="post">
                             <div class="row">
@@ -126,7 +126,7 @@ require_once('../connect/session.php');
         </div>
         <div class="line"></div>
         <footer>
-            <p class="text-center sm-sys">
+            <p class="text-center sm-system">
                 &copy; <?php echo date('Y'); ?> by <span>Mr. Charles Jeckton</span> | All rights reserved!
             </p>
         </footer>

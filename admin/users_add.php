@@ -75,28 +75,28 @@
             <div class="row">
             <div class="col-md-12 ssm">
             <div class="card">
-            <p class="card-header sammac-media">Add Details </p>    
+            <p class="card-header deveops-cj">Add Details </p>    
             <div class="card-body">
               <form action="users_add.php" method="post">
              <div class="row">
              <div class="col-md-6 form-group">
                  <label>Name</label>
-                 <input type="text" name="name" class="form-control" pattern="[a-zA-Z ]{3,20}" maxlength="20" placeholder="tendai" required>
+                 <input type="text" name="name" class="form-control" pattern="[a-zA-Z ]{3,20}" maxlength="20" placeholder="Enter first name" required>
              </div>  
               <div class="col-md-6 form-group">
                  <label>Surname</label>
-                 <input type="text" name="surname" class="form-control" pattern="[a-zA-Z ]{3,20}" maxlength="20" placeholder="doe" required>
+                 <input type="text" name="surname" class="form-control" pattern="[a-zA-Z ]{3,20}" maxlength="20" placeholder="Enter surname" required>
              </div>       
                  
              </div>  
          <div class="row">
              <div class="col-md-6 form-group">
                  <label>Username</label>
-                 <input type="text" name="username" class="form-control" pattern="[a-zA-Z ]{3,20}" maxlength="20" placeholder="tindo" required>
+                 <input type="text" name="username" class="form-control" pattern="[a-zA-Z ]{3,20}" maxlength="20" placeholder="Enter Username" required>
              </div>  
               <div class="col-md-6 form-group">
                  <label>Password</label>
-                 <input type="password" name="password" class="form-control"  maxlength="20" placeholder="" required>
+                 <input type="password" name="password" class="form-control"  maxlength="20" placeholder="Enter Password" required>
              </div>
              
                  

@@ -35,18 +35,18 @@
             <div class="row">
             <div class="col-md-12 ssm">
             <div class="card">
-            <p class="card-header sammac-media">All Weather Forecasted</p>    
+            <p class="card-header deveops-cj">All Weather Forecasted</p>    
             <div class="card-body">
-              <div id="tabs-4"><table class="table table-striped thead-dark table-bordered table-hover" id="mhishi">
+              <div id="tabs-4"><table class="table table-striped thead-dark table-bordered table-hover" id="mbugua">
                 <thead>
                 <tr>
-                    <th>No</th>
-                    <th>Date</th>
-                    <th>Region</th>
-                    <th>Temp</th>
-                    <th>Conditioning</th>
+                    <th class="text-center">No</th>
+                    <th class="text-center">Date</th>
+                    <th class="text-center">Region</th>
+                    <th class="text-center">Temp</th>
+                    <th class="text-center">Conditioning</th>
                     
-                    <th>ACTION</th>
+                    <th class="text-center">ACTION</th>
                     </tr>
                 </thead>
                     <?php
@@ -57,13 +57,13 @@
                           
                           ?>
                           <tr>
-                              <td><?php echo $a;?></td> 
-                            <td><?php echo $row['date_t'];?></td> 
-                            <td><?php echo $row['region'];?></td>   
-                            <td><?php echo $row['tempa'];?></td>
-                            <td><?php echo $row['daily'];?></td>
+                            <td class="text-center"><?php echo $a;?></td> 
+                            <td class="text-center"><?php echo $row['date_t'];?></td> 
+                            <td class="text-center"><?php echo $row['region'];?></td>   
+                            <td class="text-center"><?php echo $row['tempa'];?></td>
+                            <td class="text-center"><?php echo $row['daily'];?></td>
                            
-                             <td>    
+                             <td class="text-center">    
                   <a href="weather_view.php?edited=1&idx=<?php echo $row['id']; ?>"  class="btn btn-danger"><span class="fa fa-trash"></span></a>
                               </td>  
                           </tr>
@@ -82,7 +82,7 @@
                               $stmt->close();
                                ?>
                     <div class="alert alert-warning " >
-                   <?php echo'Record Successfully Deleted Crop';?></div>
+                   <?php echo'Record Successfully Deleted';?></div>
                    <script>
                        setTimeout(function () {
                         window.location.href = "weather_view.php";
@@ -105,7 +105,7 @@
             </div>
              <div class="line"></div>
                  <footer>
-            <p class="text-center sm-sys">
+            <p class="text-center sm-system">
             &copy; copyright @  <?php echo date('Y');?> by <span>Mr. Charles Jeckton</span>  |  All rights reserved!   
             </p>
             </footer>
@@ -128,7 +128,7 @@
     <script src="../vendor/DataTables/datatables.min.js"></script> 
         <script>
     $(document).ready( function () {
-    $('#mhishi').DataTable();
+    $('#mbugua').DataTable();
            
     } );
         </script>

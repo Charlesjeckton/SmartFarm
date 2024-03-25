@@ -85,7 +85,7 @@
         <div class="row">
             <div class="col-md-12 ssm">
                 <div class="card">
-                    <p class="card-header sammac-media">Weather Tips </p>
+                    <p class="card-header deveops-cj">Weather Tips </p>
                     <div class="card-body">
                         <form action="weather_add.php" method="post">
                             <div class="row">
@@ -98,7 +98,7 @@
                                     <label>Daily</label>
                                     <select class="form-control" name="daily">
                                         <option>Sunny</option>
-                                        <option>partly Clouds</option>
+                                        <option>Partly Clouds</option>
                                         <option>Overcasted</option>
                                         <option>Rain</option>
                                         <option>Rain With Thunder Storm</option>
@@ -144,7 +144,7 @@
         </div>
         <div class="line"></div>
         <footer>
-            <p class="text-center sm-sys">
+            <p class="text-center sm-system">
                 &copy; copyright @ <?php echo date('Y');?> by <span>Mr. Charles Jeckton</span> | All rights reserved!
             </p>
         </footer>

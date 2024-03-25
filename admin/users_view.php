@@ -35,9 +35,9 @@
             <div class="row">
             <div class="col-md-12 ssm">
             <div class="card">
-            <p class="card-header sammac-media">View Users</p>    
+            <p class="card-header deveops-cj">View Users</p>    
             <div class="card-body">
-              <div id="tabs-4"><table class="table table-striped thead-dark table-bordered table-hover" id="mhishi">
+              <div id="tabs-4"><table class="table table-striped thead-dark table-bordered table-hover" id="mbugua">
                 <thead>
                 <tr>
                     <th>No</th>
@@ -102,7 +102,7 @@
             </div>
              <div class="line"></div>
                  <footer>
-            <p class="text-center sm-sys">
+            <p class="text-center sm-system">
             &copy; copyright @  <?php echo date('Y');?> by <span>Mr. Charles Jeckton</span>  |  All rights reserved!  
             </p>
             </footer>
@@ -125,7 +125,7 @@
     <script src="../vendor/DataTables/datatables.min.js"></script> 
         <script>
     $(document).ready( function () {
-    $('#mhishi').DataTable();
+    $('#mbugua').DataTable();
            
     } );
         </script>

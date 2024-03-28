@@ -40,14 +40,13 @@
               <div id="tabs-4"><table class="table table-striped thead-dark table-bordered table-hover" id="mbugua">
                 <thead>
                 <tr>
-                    <th>No</th>
-                    <th>Name</th>
-                    <th>Username</th>
-                    <th>Password</th>
-                    <th>Phone</th>
-                    <th>Region</th>
-                    <th>Joined Date</th>
-                    <th>ACTION</th>
+                    <th class="text-center">No</th>
+                    <th class="text-center">Name</th>
+                    <th class="text-center">Username</th>
+                    <th class="text-center">Phone</th>
+                    <th class="text-center">Region</th>
+                    <th class="text-center">Joined Date</th>
+                    <th class="text-center">ACTION</th>
                     </tr>
                 </thead>
                     <?php
@@ -58,14 +57,13 @@
                           
                           ?>
                           <tr>
-                              <td><?php echo $a;?></td> 
-                            <td><?php echo $row['fname'];?></td> 
-                            <td><?php echo $row['username'];?></td>   
-                            <td><?php echo $row['password'];?></td>
-                            <td><?php echo $row['phone'];?></td>
-                            <td><?php echo $row['region'];?></td>
-                            <td><?php echo $row['joined_date'];?></td>  
-                             <td>    
+                              <td class="text-center"><?php echo $a;?></td> 
+                            <td class="text-center"><?php echo $row['name'];?></td> 
+                            <td class="text-center"><?php echo $row['username'];?></td>   
+                            <td class="text-center"><?php echo $row['phone'];?></td>
+                            <td class="text-center"><?php echo $row['region'];?></td>
+                            <td class="text-center"><?php echo $row['joined_date'];?></td>  
+                             <td class="text-center">    
                   <a href="farms_view.php?edited=1&idx=<?php echo $row['id']; ?>"  class="btn btn-danger"><span class="fa fa-trash"></span></a>
                               </td>  
                           </tr>

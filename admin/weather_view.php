@@ -45,7 +45,6 @@
                     <th class="text-center">Region</th>
                     <th class="text-center">Temp</th>
                     <th class="text-center">Conditioning</th>
-                    
                     <th class="text-center">ACTION</th>
                     </tr>
                 </thead>

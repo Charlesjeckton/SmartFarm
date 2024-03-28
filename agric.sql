@@ -51,7 +51,7 @@ INSERT INTO `agri_tips` (`id`, `description`, `region`, `type`, `date_t`) VALUES
 
 CREATE TABLE `farmers` (
   `id` int(11) NOT NULL,
-  `fname` varchar(20) NOT NULL,
+  `name` varchar(20) NOT NULL,
   `username` varchar(20) NOT NULL,
   `password` varchar(64) NOT NULL,
   `phone` varchar(20) NOT NULL,
@@ -64,9 +64,9 @@ CREATE TABLE `farmers` (
 -- Dumping data for table `farmers`
 --
 
-INSERT INTO `farmers` (`id`, `fname`, `username`, `password`, `phone`, `region`, `joined_date`, `type`) VALUES
-(3, 'Clive Omoro', 'omosh', '12345', '0775011617', 'Nyanza', '2024-03-25', 'user'),
-(5, 'Babu Owino',  'babu', '12345', '0775509424', 'Nairobi', '2024-03-25', 'user');
+INSERT INTO `farmers` (`id`, `name`, `username`, `password`, `phone`, `region`, `joined_date`, `type`) VALUES
+(3, 'Clive Omoro', 'omosh', '827ccb0eea8a706c4c34a16891f84e7b', '0775011617', 'Nyanza', '2024-03-25', 'user'),
+(5, 'Babu Owino',  'babu', '827ccb0eea8a706c4c34a16891f84e7b', '0775509424', 'Nairobi', '2024-03-25', 'user');
 
 -- --------------------------------------------------------
 
@@ -125,18 +125,18 @@ CREATE TABLE `users` (
   `name` varchar(20) NOT NULL,
   `surname` varchar(20) NOT NULL,
   `username` varchar(20) NOT NULL,
-  `password` varchar(64) NOT NULL, 
+  `password` varchar(64) NOT NULL,
   `type` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `name`, `surname`, `username`, `password`, `type`) VALUES
-(1, 'Jeckton', 'admin', 'admin', '827ccb0eea8a706c4c34a16891f84e7b', 'admin'),
-(4, 'Rufus', 'rufus', 'rufus', '827ccb0eea8a706c4c34a16891f84e7b', 'admin'),
-(5, 'Steve', 'steve', '', '827ccb0eea8a706c4c34a16891f84e7b', 'admin');
+(1, 'Jeckton', 'admin', 'admin', '827ccb0eea8a706c4c34a16891f84e7b', 'user'),
+(4, 'Rufus', 'mwangi', 'samstrover', '827ccb0eea8a706c4c34a16891f84e7b', 'user'),
+(5, 'Mbugua', 'Esther', '', 'd41d8cd98f00b204e9800998ecf8427e', 'user');
 
 
 --

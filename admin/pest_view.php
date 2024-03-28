@@ -40,12 +40,12 @@
               <div id="tabs-4"><table class="table table-striped thead-dark table-bordered table-hover" id="mbugua">
                 <thead>
                 <tr>
-                    <th>No</th>
-                    <th>Type</th>
-                    <th>Description</th>
-                    <th>Region</th>
-                    <th>Date Added</th>
-                    <th>ACTION</th>
+                    <th class="text-center">No</th>
+                    <th class="text-center">Type</th>
+                    <th class="text-center">Description</th>
+                    <th class="text-center">Region</th>
+                    <th class="text-center">Date Added</th>
+                    <th class="text-center">ACTION</th>
                     </tr>
                 </thead>
                     <?php
@@ -56,12 +56,12 @@
                           
                           ?>
                           <tr>
-                              <td><?php echo $a;?></td>
-                            <td><?php echo $row['type'];?></td>    
-                            <td><?php echo $row['description'];?></td> 
-                            <td><?php echo $row['region'];?></td>   
-                            <td><?php echo $row['date_t'];?></td>
-                             <td>    
+                              <td class="text-center"><?php echo $a;?></td>
+                            <td class="text-center"><?php echo $row['type'];?></td>    
+                            <td class="text-center"><?php echo $row['description'];?></td> 
+                            <td class="text-center"><?php echo $row['region'];?></td>   
+                            <td class="text-center"><?php echo $row['date_t'];?></td>
+                             <td class="text-center">    
                   <a href="pest_view.php?edited=1&idx=<?php echo $row['id']; ?>"  class="btn btn-danger"><span class="fa fa-trash"></span></a>
                               </td>  
                           </tr>

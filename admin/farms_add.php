@@ -24,17 +24,18 @@ require_once('../connect/session.php');
     <div class="wrapper">
         <!-- Sidebar -->
         <?php include_once ('page-headers.php'); ?>
-        <div class="line"></div>
+        <div class="line"></div>  
         <?php
-        function createFarmerAccount($fname, $username, $password, $phone, $region) {
+        function createFarmerAccount($name, $username, $password, $phone, $region) {
             global $db;
         
             // Escape user inputs to prevent SQL injection
-            $fname = mysqli_real_escape_string($db, $fname);
-            $username = mysqli_real_escape_string($db, $username);
-            $password = mysqli_real_escape_string($db, $password);
+            $name = mysqli_real_escape_string($db, $name);
             $phone = mysqli_real_escape_string($db, $phone);
             $region = mysqli_real_escape_string($db, $region);
+            $username = mysqli_real_escape_string($db, $username);
+            $password = mysqli_real_escape_string($db, $password);
+            $password = md5($password);
         
             // Generate joined date
             $joined_date = date('Y-m-d');
@@ -47,7 +48,7 @@ require_once('../connect/session.php');
                 return 'Username already exists';
             } else {
                 // Insert new farmer account
-                $sql = "INSERT INTO farmers (fname, username, password, phone, region, joined_date, type) VALUES ('$fname', '$username', '$password', '$phone', '$region', '$joined_date', 'Farmer')";
+                $sql = "INSERT INTO farmers (name, username, password, phone, region, joined_date, type) VALUES ('$name', '$username', '$password', '$phone', '$region', '$joined_date', 'Farmer')";
                 $result = mysqli_query($db, $sql);
         
                 if ($result) {
@@ -62,13 +63,13 @@ require_once('../connect/session.php');
         
         // Usage example
         if (isset($_POST['submit'])) {
-            $fname = $_POST['name'];
-            $username = $_POST['username'];
-            $password = $_POST['password'];
+            $name = $_POST['name'];
             $phone = $_POST['phone'];
             $region = $_POST['region'];
+            $username = $_POST['username'];
+            $password = $_POST['password'];
         
-            $result_message = createFarmerAccount($fname, $username, $password, $phone, $region);
+            $result_message = createFarmerAccount($name, $username, $password, $phone, $region);
             echo '<div class="alert alert-success">' . $result_message . '</div>';
         }
         ?>
@@ -77,7 +78,7 @@ require_once('../connect/session.php');
         <div class="row">
             <div class="col-md-12 ssm">
                 <div class="card">
-                    <p class="card-header deveops-cj">Add Details </p>
+                    <p class="card-header deveops-cj">Add Farmers </p>
                     <div class="card-body">
                         <form action="farms_add.php" method="post">
                             <div class="row">
@@ -85,14 +86,7 @@ require_once('../connect/session.php');
                                     <label>Name</label>
                                     <input type="text" name="name" class="form-control" pattern="[a-zA-Z ]{3,20}" maxlength="20" placeholder="Esther" required>
                                 </div>
-                                <div class="col-md-6 form-group">
-                                    <label>Username</label>
-                                    <input type="text" name="username" class="form-control" pattern="[a-zA-Z ]{3,20}" maxlength="20" placeholder="Mbugua" required>
-                                </div>
-                                <div class="col-md-6 form-group">
-                                    <label>Password</label>
-                                    <input type="password" name="password" class="form-control" maxlength="20" placeholder="" required>
-                                </div>
+
                                 <div class="col-md-6 form-group">
                                     <label>Phone</label>
                                     <input type="text" name="phone" class="form-control" pattern="[0-0]{1,1}[7-7]{1,1}[1-9]{2,2}[0-9]{6,6}" maxlength="20" placeholder="0774328908" required>
@@ -109,6 +103,14 @@ require_once('../connect/session.php');
                                         <option>Western</option>
                                         <option>North Eastern</option>
                                     </select>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label>Username</label>
+                                    <input type="text" name="username" class="form-control" pattern="[a-zA-Z ]{3,20}" maxlength="20" placeholder="Mbugua" required>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label>Password</label>
+                                    <input type="password" name="password" class="form-control" maxlength="20" placeholder="" required>
                                 </div>
                             </div>
                             <div class="row">

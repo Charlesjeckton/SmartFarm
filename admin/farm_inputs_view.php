@@ -40,11 +40,11 @@
               <div id="tabs-4"><table class="table table-striped thead-dark table-bordered table-hover" id="mbugua">
                 <thead>
                 <tr>
-                    <th>No</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Price (KSH)</th>
-                    <th>ACTION</th>
+                    <th class="text-center">No</th>
+                    <th class="text-center">Name</th>
+                    <th class="text-center">Description</th>
+                    <th class="text-center">Price (KSH)</th>
+                    <th class="text-center">ACTION</th>
                     </tr>
                 </thead>
                     <?php
@@ -55,11 +55,11 @@
                           
                           ?>
                           <tr>
-                              <td><?php echo $a;?></td>
-                            <td><?php echo $row['name'];?></td>    
-                            <td><?php echo $row['description'];?></td> 
-                            <td><?php echo $row['price'];?></td>   
-                             <td>    
+                              <td class="text-center"><?php echo $a;?></td>
+                            <td class="text-center"><?php echo $row['name'];?></td>    
+                            <td class="text-center"><?php echo $row['description'];?></td> 
+                            <td class="text-center"><?php echo $row['price'];?></td>   
+                             <td class="text-center">    
                   <a href="farm_inputs_view.php?edited=1&idx=<?php echo $row['id']; ?>"  class="btn btn-danger"><span class="fa fa-trash"></span></a>
                               </td>  
                           </tr>

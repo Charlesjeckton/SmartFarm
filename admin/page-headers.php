@@ -41,7 +41,7 @@
                 </li>
 
                 <li>
-                    <a href="pest_view.php">view</a>
+                    <a href="pest_view.php">View</a>
                 </li>
             </ul>
         </li>

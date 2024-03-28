@@ -21,7 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="../vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="../vendor/animsition/css/animsition.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style_farmers.css">
     <link rel="stylesheet" type="text/css" href="../vendor/Jquery-ui/jquery-ui.min.css">
      <link rel="stylesheet" type="text/css" href="../vendor/DataTables/datatables.min.css">
 <!--===============================================================================================-->
@@ -35,33 +35,33 @@
             <div class="row">
             <div class="col-md-12 ssm">
             <div class="card">
-            <p class="card-header deveops-cj">View Users</p>    
+            <p class="card-header deveops-cj">All Weather Forecasted</p>    
             <div class="card-body">
               <div id="tabs-4"><table class="table table-striped thead-dark table-bordered table-hover" id="mbugua">
                 <thead>
                 <tr>
                     <th class="text-center">No</th>
-                    <th class="text-center">Name</th>
-                    <th class="text-center">Surname</th>
-                    <th class="text-center">Username</th>
-                    <th class="text-center">ACTION</th>
+                    <th class="text-center">Date</th>
+                    <th class="text-center">Region</th>
+                    <th class="text-center">Temp</th>
+                    <th class="text-center">Conditioning</th>
                     </tr>
                 </thead>
                     <?php
                      $a=1;
-                    $query=mysqli_query($db,"select *from `users` ");
+                    $query=mysqli_query($db,"select *from `forecasting` ");
                      while($row=mysqli_fetch_array($query))
                         {
                           
                           ?>
                           <tr>
-                              <td class="text-center"><?php echo $a;?></td> 
-                            <td class="text-center"><?php echo $row['name'];?></td> 
-                            <td class="text-center"><?php echo $row['surname'];?></td>   
-                            <td class="text-center"><?php echo $row['username'];?></td>
-                             <td class="text-center">    
-                  <a href="users_view.php?edited=1&idx=<?php echo $row['id']; ?>"  class="btn btn-danger"><span class="fa fa-trash"></span></a>
-                              </td>  
+                            <td class="text-center"><?php echo $a;?></td> 
+                            <td class="text-center"><?php echo $row['date_t'];?></td> 
+                            <td class="text-center"><?php echo $row['region'];?></td>   
+                            <td class="text-center"><?php echo $row['tempa'];?></td>
+                            <td class="text-center"><?php echo $row['daily'];?></td>
+                           
+                              
                           </tr>
                           <?php
                        
@@ -71,18 +71,17 @@
                        if (isset($_GET['idx']) && is_numeric($_GET['idx']))
                       {
                           $id = $_GET['idx'];
-                          if ($stmt = $db->prepare("DELETE FROM users WHERE id = ? LIMIT 1"))
+                          if ($stmt = $db->prepare("DELETE FROM forecasting WHERE id = ? LIMIT 1"))
                           {
                               $stmt->bind_param("i",$id);
                               $stmt->execute();
                               $stmt->close();
                                ?>
                     <div class="alert alert-warning " >
-                    <a href="#" class="close" data-dismiss="alert">&times;</a>
-                    <strong> Successfully! </strong><?php echo'Record Successfully Deleted';?></div>
+                   <?php echo'Record Successfully Deleted';?></div>
                    <script>
                        setTimeout(function () {
-                        window.location.href = "users_view.php";
+                        window.location.href = "weather_view.php";
                         }, 5000); 
                       
                     </script>
@@ -103,7 +102,7 @@
              <div class="line"></div>
                  <footer>
             <p class="text-center sm-system">
-            &copy; copyright @  <?php echo date('Y');?> by <span>Mr. Charles Jeckton</span>  |  All rights reserved!  
+            &copy; copyright @  <?php echo date('Y');?> by <span>Mr. Charles Jeckton</span>  |  All rights reserved!   
             </p>
             </footer>
            <div class="line"></div> 

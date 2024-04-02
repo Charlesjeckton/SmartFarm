@@ -88,15 +88,7 @@
                     <p class="card-header deveops-cj">Add Agricultral Tips </p>
                     <div class="card-body">
                         <form action="pest_add.php" method="post">
-                            <div class="row">
-                                <div class="col-md-12 form-group">
-                                    <label>Description</label>
-                                    <input type="text" name="description" class="form-control" maxlength="200"
-                                        placeholder="Agricultural Fungicides Broad-spectrum fungicides" required>
-                                </div>
-
-
-                            </div>
+                            
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <label>Type</label>
@@ -124,6 +116,15 @@
                                     </select>
                                 </div>
 
+
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 form-group">
+                                    <label>Description</label>
+                                    <input type="text" name="description" class="form-control" maxlength="200"
+                                        placeholder="Agricultural Fungicides Broad-spectrum fungicides" required>
+                                </div>
 
 
                             </div>

@@ -57,7 +57,7 @@
                               <td class="text-center"><?php echo $a;?></td>
                             <td class="text-center"><?php echo $row['name'];?></td>    
                             <td class="text-center"><?php echo $row['description'];?></td> 
-                            <td class="text-center"><?php echo $row['price'];?></td>   
+                            <td class="text-center"><?php echo number_format($row['price']);?></td> 
                              
                           </tr>
                           <?php

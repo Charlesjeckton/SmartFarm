@@ -41,7 +41,7 @@ CREATE TABLE `agri_tips` (
 --
 
 INSERT INTO `agri_tips` (`id`, `description`, `region`, `type`, `date_t`) VALUES
-(2, 'insecticide Thiamethoxam 30% SC, 21% SC, good control effect on rice planthopper Usage method 1. To control rice planthopper, 25% thiamethoxazine ', 'Rift-Valley', 'Agricultural Insecticides', '2024-03-25');
+(2, 'Insecticide Thiamethoxam 30% SC, 21% SC, good control effect on rice planthopper Usage method 1. To control rice planthopper, 25% thiamethoxazine ', 'Rift-Valley', 'Agricultural Insecticides', '2024-03-25');
 
 -- --------------------------------------------------------
 
@@ -65,8 +65,8 @@ CREATE TABLE `farmers` (
 --
 
 INSERT INTO `farmers` (`id`, `name`, `username`, `password`, `phone`, `region`, `joined_date`, `type`) VALUES
-(3, 'Clive Omoro', 'omosh', '827ccb0eea8a706c4c34a16891f84e7b', '0775011617', 'Nyanza', '2024-03-25', 'user'),
-(5, 'Babu Owino',  'babu', '827ccb0eea8a706c4c34a16891f84e7b', '0775509424', 'Nairobi', '2024-03-25', 'user');
+(3, 'Clive Omoro', 'omosh', '827ccb0eea8a706c4c34a16891f84e7b', '0775011617', 'Nyanza', '2024-03-25', 'Farmer'),
+(5, 'Babu Owino',  'babu', '827ccb0eea8a706c4c34a16891f84e7b', '0775509424', 'Nairobi', '2024-03-25', 'Farmer');
 
 -- --------------------------------------------------------
 
@@ -134,9 +134,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `surname`, `username`, `password`, `type`) VALUES
-(1, 'Jeckton', 'admin', 'admin', '827ccb0eea8a706c4c34a16891f84e7b', 'user'),
-(4, 'Rufus', 'mwangi', 'samstrover', '827ccb0eea8a706c4c34a16891f84e7b', 'user'),
-(5, 'Mbugua', 'Esther', '', 'd41d8cd98f00b204e9800998ecf8427e', 'user');
+(1, 'Charles', 'Jeckton', 'admin', '827ccb0eea8a706c4c34a16891f84e7b', 'user'),
+(4, 'Rufus', 'mwangi', 'rufus', '827ccb0eea8a706c4c34a16891f84e7b', 'user'),
+(5, 'Mbugua', 'Esther', 'mbugua', 'd41d8cd98f00b204e9800998ecf8427e', 'user');
 
 
 --

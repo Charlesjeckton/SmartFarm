@@ -81,13 +81,7 @@ require_once('../connect/session.php');
                 <p class="card-header deveops-cj">Add Farm Inputs </p>
                 <div class="card-body">
                     <form action="farm_inputs_add.php" method="post">
-                        <div class="row">
-                            <div class="col-md-12 form-group">
-                                <label>Description</label>
-                                <input type="text" name="description" class="form-control" maxlength="200"
-                                       placeholder="Describe the farm input" required>
-                            </div>
-                        </div>
+                        
                         <div class="row">
                             <div class="col-md-6 form-group">
                                 <label>Farm Input Name</label>
@@ -98,6 +92,13 @@ require_once('../connect/session.php');
                                 <label>Price</label>
                                 <input type="number" name="price" class="form-control" maxlength="200"
                                        placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <label>Description</label>
+                                <input type="text" name="description" class="form-control" maxlength="200"
+                                       placeholder="Describe the farm input" required>
                             </div>
                         </div>
                         <div class="row">

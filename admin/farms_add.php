@@ -110,7 +110,7 @@ require_once('../connect/session.php');
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <label>Password</label>
-                                    <input type="password" name="password" class="form-control" maxlength="20" placeholder="" required>
+                                    <input type="password" name="password" class="form-control" maxlength="20" placeholder="Mbugua123" required>
                                 </div>
                             </div>
                             <div class="row">

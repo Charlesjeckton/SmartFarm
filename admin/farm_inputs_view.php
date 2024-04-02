@@ -58,7 +58,7 @@
                               <td class="text-center"><?php echo $a;?></td>
                             <td class="text-center"><?php echo $row['name'];?></td>    
                             <td class="text-center"><?php echo $row['description'];?></td> 
-                            <td class="text-center"><?php echo $row['price'];?></td>   
+                            <td class="text-center"><?php echo number_format($row['price']);?></td>  
                              <td class="text-center">    
                   <a href="farm_inputs_view.php?edited=1&idx=<?php echo $row['id']; ?>"  class="btn btn-danger"><span class="fa fa-trash"></span></a>
                               </td>  

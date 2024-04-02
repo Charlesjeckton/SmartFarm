@@ -24,7 +24,7 @@ if(isset($_POST['submit'])){
                 $_SESSION["type"]=$db_type;
                 $_SESSION["name"]=$db_name;
 
-                if($_SESSION["type"]=='user'){
+                if($_SESSION["type"]=='Farmer'){
                     header("Location:dashboard.php");
                     exit; // Redirect and stop further execution
                 }
@@ -77,7 +77,7 @@ if(isset($_POST['submit'])){
             <input type="password" name="password" class="form-control" maxlength="20" placeholder="" required>
         </div>
         <div class="form-group">
-            <button type="submit" name="submit" class="btn btn-success btn-block"> Submit</button>
+            <button type="submit" name="submit" class="btn btn-success btn-block"> Login</button>
         </div>
 		<p>
             Don't have an account?<a href="signUp.php" class="already"> Sign Up</a>

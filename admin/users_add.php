@@ -118,7 +118,7 @@
             </div>
              <div class="line"></div>
                <footer>
-            <p class="text-center sm-sys">
+            <p class="text-center sm-system">
             &copy; copyright @  <?php echo date('Y');?> by <span>Mr. Charles Jeckton</span>  |  All rights reserved!   
             </p>
             </footer>

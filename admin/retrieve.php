@@ -18,7 +18,7 @@ $sql2 ="SELECT count(id) As total2 FROM forecasting  ";
       $values3=mysqli_fetch_assoc($result3);
       $jeckton3=$values3['total3'];
 
-$sql4 ="SELECT count(id) As total4 FROM users  ";
+$sql4 ="SELECT count(id) As total4 FROM admins  ";
       $result4=mysqli_query($db,$sql4);
       $values4=mysqli_fetch_assoc($result4);
       $jeckton4=$values4['total4'];

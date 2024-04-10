@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>AgriBoost | Dashboard </title>
+	<title>Smart Farm | Dashboard </title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -49,7 +49,7 @@
                 </thead>
                     <?php
                      $a=1;
-                    $query=mysqli_query($db,"select *from `users` ");
+                    $query=mysqli_query($db,"select *from `admins` ");
                      while($row=mysqli_fetch_array($query))
                         {
                           
@@ -102,9 +102,9 @@
             </div>
              <div class="line"></div>
                  <footer>
-            <p class="text-center sm-system">
-            &copy; copyright @  <?php echo date('Y');?> by <span>Mr. Charles Jeckton</span>  |  All rights reserved!  
-            </p>
+                 <p class="text-center sm-system">
+            &copy; copyright @ <?php echo date('Y'); ?> by <span>Mrs. Esther Mbugua </span> | All rights reserved!
+        </p>
             </footer>
            <div class="line"></div> 
         

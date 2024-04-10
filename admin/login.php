@@ -9,7 +9,7 @@ if(isset($_POST['submit'])){
     $password = mysqli_real_escape_string($db,$_POST['password']);
     $password= md5($password);
     
-    $query1=mysqli_query($db,"SELECT username,password,type,name,surname FROM users WHERE username='$username'");
+    $query1=mysqli_query($db,"SELECT username,password,type,name,surname FROM admins WHERE username='$username'");
     
     if(mysqli_num_rows($query1) > 0) {
         while($row=mysqli_fetch_array($query1)) {
@@ -26,7 +26,7 @@ if(isset($_POST['submit'])){
                 $_SESSION["name"]=$db_name;
 				$_SESSION["surname"]=$db_surname;
 
-                if($_SESSION["type"]=='user'){
+                if($_SESSION["type"]=='admin'){
                     header("Location:dashboard.php");
                     exit; // Redirect and stop further execution
                 }

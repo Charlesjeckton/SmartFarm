@@ -118,9 +118,9 @@ INSERT INTO `farm_inputs` (`id`, `name`, `description`, `price`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Table structure for table `admins`
 --
-CREATE TABLE `users` (
+CREATE TABLE `admins` (
   `id` int(11) NOT NULL,
   `name` varchar(20) NOT NULL,
   `surname` varchar(20) NOT NULL,
@@ -130,13 +130,13 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `users`
+-- Dumping data for table `admins`
 --
 
-INSERT INTO `users` (`id`, `name`, `surname`, `username`, `password`, `type`) VALUES
-(1, 'Charles', 'Jeckton', 'admin', '827ccb0eea8a706c4c34a16891f84e7b', 'user'),
-(4, 'Rufus', 'mwangi', 'rufus', '827ccb0eea8a706c4c34a16891f84e7b', 'user'),
-(5, 'Mbugua', 'Esther', 'mbugua', 'd41d8cd98f00b204e9800998ecf8427e', 'user');
+INSERT INTO `admins` (`id`, `name`, `surname`, `username`, `password`, `type`) VALUES
+(1, 'Charles', 'Jeckton', 'admin', '827ccb0eea8a706c4c34a16891f84e7b', 'admin'),
+(4, 'Rufus', 'mwangi', 'rufus', '827ccb0eea8a706c4c34a16891f84e7b', 'admin'),
+(5, 'Mbugua', 'Esther', 'mbugua', 'd41d8cd98f00b204e9800998ecf8427e', 'admin');
 
 
 --
@@ -168,9 +168,9 @@ ALTER TABLE `farm_inputs`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `users`
+-- Indexes for table `admins`
 --
-ALTER TABLE `users`
+ALTER TABLE `admins`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -202,9 +202,9 @@ ALTER TABLE `farm_inputs`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT for table `admins`
 --
-ALTER TABLE `users`
+ALTER TABLE `admins`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 

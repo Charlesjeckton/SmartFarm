@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>AgriBoost | Dashboard </title>
+	<title>Smart Farm | Dashboard </title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -35,7 +35,7 @@
             <div class="row">
             <div class="col-md-12 ssm">
             <div class="card">
-            <p class="card-header deveops-cj">All Tips</p>    
+            <p class="card-header deveops-cj">All Agricultural Tips</p>    
             <div class="card-body">
               <div id="tabs-4"><table class="table table-striped thead-dark table-bordered table-hover" id="mbugua">
                 <thead>
@@ -104,9 +104,9 @@
             </div>
              <div class="line"></div>
                 <footer>
-            <p class="text-center sm-system">
-            &copy; copyright @  <?php echo date('Y');?> by <span>Mr. Charles Jeckton</span>  |  All rights reserved!   
-            </p>
+                <p class="text-center sm-system">
+            &copy; copyright @ <?php echo date('Y'); ?> by <span>Mrs. Esther Mbugua </span> | All rights reserved!
+        </p>
             </footer>
            <div class="line"></div> 
         

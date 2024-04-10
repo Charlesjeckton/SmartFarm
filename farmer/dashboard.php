@@ -74,9 +74,9 @@
         <?php require('weather.php');?>
         <div class="line"></div>
         <footer>
-            <p class="text-center sm-system">
-                &copy; copyright @ <?php echo date('Y');?> by <span>Mr. Charles Jeckton</span> | All rights reserved!
-            </p>
+        <p class="text-center sm-system">
+            &copy; copyright @ <?php echo date('Y'); ?> by <span>Mrs. Esther Mbugua </span> | All rights reserved!
+        </p>
         </footer>
         <div class="line"></div>
 

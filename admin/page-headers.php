@@ -8,18 +8,7 @@
             <a href="dashboard.php" class="fa fa-th"> Dashboard</a>
 
         </li>
-         <li>
-            <a href="#pageSubmenuRue"  data-toggle="collapse" aria-expanded="false" class="fa fa-user-circle-o dropdown-toggle"> Farmers</a>
-            <ul class="collapse list-unstyled" id="pageSubmenuRue">
-                <li>
-                    <a href="farms_add.php">Add</a>
-                </li>
-
-                <li>
-                    <a href="farms_view.php">View</a>
-                </li>
-            </ul>
-        </li>
+         
          
        <li>
             <a href="#pageSubmenuRuebaeRamus"  data-toggle="collapse" aria-expanded="false" class="fa fa-thermometer-half dropdown-toggle"> Weather Updates</a>
@@ -58,15 +47,27 @@
                 </li>
             </ul>
         </li>
+        <li>
+            <a href="#pageSubmenuRue"  data-toggle="collapse" aria-expanded="false" class="fa fa-user-circle-o dropdown-toggle"> Farmers</a>
+            <ul class="collapse list-unstyled" id="pageSubmenuRue">
+                <li>
+                    <a href="farms_add.php">Add</a>
+                </li>
+
+                <li>
+                    <a href="farms_view.php">View</a>
+                </li>
+            </ul>
+        </li>
         
         <li>
-            <a href="#pageSubmenu1"  data-toggle="collapse" aria-expanded="false" class="fa fa-users dropdown-toggle"> Users</a>
+            <a href="#pageSubmenu1"  data-toggle="collapse" aria-expanded="false" class="fa fa-users dropdown-toggle"> Admins</a>
             <ul class="collapse list-unstyled" id="pageSubmenu1">
                 <li>
-                    <a href="users_add.php">Add</a>
+                    <a href="admins_add.php">Add</a>
                 </li>
                 <li>
-                    <a href="users_view.php">View</a>
+                    <a href="admins_view.php">View</a>
                 </li>
 
             </ul>

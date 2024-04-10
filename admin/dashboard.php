@@ -76,9 +76,9 @@
             </div>
             <div class="col-md-4 mt-4">
                 <div class="card-counter charles">
-                <a href="users_view.php"><i class="fa fa-users"></i></a>
+                <a href="admins_view.php"><i class="fa fa-users"></i></a>
                     <span class="count-numbers"><?php echo $jeckton4;?></span>
-                    <span class="count-name"><a href="users_view.php">Users</a></span>
+                    <span class="count-name"><a href="admins_view.php">Admins</a></span>
                 </div>
             </div>
 
@@ -89,9 +89,9 @@
         <?php require('weather.php');?>
         <div class="line"></div>
         <footer>
-            <p class="text-center sm-system">
-                &copy; copyright @ <?php echo date('Y');?> by <span>Mr. Charles Jeckton</span> | All rights reserved!
-            </p>
+        <p class="text-center sm-system">
+            &copy; copyright @ <?php echo date('Y'); ?> by <span>Mrs. Esther Mbugua </span> | All rights reserved!
+        </p>
         </footer>
         <div class="line"></div>
 

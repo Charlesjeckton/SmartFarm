@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>AgriBoost | Dashboard </title>
+	<title>Smart Farm | Dashboard </title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -37,7 +37,7 @@
                             $username = mysqli_real_escape_string($db,$_POST['username']);
                             $password = mysqli_real_escape_string($db,$_POST['password']);         
                             $password = md5($password);
-                            $sql_e = "SELECT * FROM users WHERE username ='$username'";
+                            $sql_e = "SELECT * FROM admins WHERE username ='$username'";
                             $res_e = mysqli_query($db, $sql_e);
                             if(mysqli_num_rows($res_e) > 0){
                             ?>
@@ -47,7 +47,7 @@
                         <?php    
                        }else{      
                   
-                $sql = "INSERT INTO users(name,surname,username,password,type)VALUES('$name','$surname','$username','$password','user')";
+                $sql = "INSERT INTO admins(name,surname,username,password,type)VALUES('$name','$surname','$username','$password','admin')";
                 $results = mysqli_query($db,$sql);
                         
                         
@@ -56,7 +56,7 @@
                               ?>
                         <div class="alert alert-success  animated bounce" id="sams1">
                         <a href="#" class="close" data-dismiss="alert">&times;</a>
-                        <strong> Successfully! </strong><?php echo'Thank you for adding crops ';?></div>
+                        <strong> Successfully! </strong><?php echo'Thank you for adding admin ';?></div>
                         <?php
 
                           }else{
@@ -118,9 +118,9 @@
             </div>
              <div class="line"></div>
                <footer>
-            <p class="text-center sm-system">
-            &copy; copyright @  <?php echo date('Y');?> by <span>Mr. Charles Jeckton</span>  |  All rights reserved!   
-            </p>
+               <p class="text-center sm-system">
+            &copy; copyright @ <?php echo date('Y'); ?> by <span>Mrs. Esther Mbugua </span> | All rights reserved!
+        </p>
             </footer>
            <div class="line"></div> 
         

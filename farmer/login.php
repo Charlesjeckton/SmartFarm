@@ -44,7 +44,7 @@ if(isset($_POST['submit'])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Agriculture Support System Login</title>
+    <title>SmartFarm System Farmer Login</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
@@ -74,7 +74,7 @@ if(isset($_POST['submit'])){
         </div>
         <div class=" form-group">
             <label>Password:</label>
-            <input type="password" name="password" class="form-control" maxlength="20" placeholder="" required>
+            <input type="password" name="password" class="form-control" maxlength="20" placeholder="*******" required>
         </div>
         <div class="form-group">
             <button type="submit" name="submit" class="btn btn-success btn-block"> Login</button>

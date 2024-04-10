@@ -121,7 +121,7 @@ require_once('../connect/database.php');
             </div>
             <div class=" form-group">
                 <label>Password:</label>
-                <input type="password" name="password" class="form-control" maxlength="20"  placeholder="" required>
+                <input type="password" name="password" class="form-control" maxlength="20"  placeholder="******" required>
             </div>
             <div class="form-group">
                 <button type="submit" name="submit" class="btn btn-success btn-block"> Submit</button>

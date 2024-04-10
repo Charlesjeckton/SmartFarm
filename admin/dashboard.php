@@ -44,11 +44,11 @@
             </div>
 
             <div class="col-md-4">
-            <a href="farms_view.php">
+            <a href="farmers_view.php">
                 <div class="card-counter info">
-                <a href="farms_view.php"><i class="fa fa-user-circle-o"> </i> </a>
+                <a href="farmers_view.php"><i class="fa fa-user-circle-o"> </i> </a>
                     <span class="count-numbers"><?php echo $jeckton;?></span>
-                    <span class="count-name"> <a href="farms_view.php"> Farmers</a></span>
+                    <span class="count-name"> <a href="farmers_view.php"> Farmers</a></span>
                     
                 </div>
             </div>

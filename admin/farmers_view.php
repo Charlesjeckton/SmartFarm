@@ -64,7 +64,7 @@
                             <td class="text-center"><?php echo $row['region'];?></td>
                             <td class="text-center"><?php echo $row['joined_date'];?></td>  
                              <td class="text-center">    
-                  <a href="farms_view.php?edited=1&idx=<?php echo $row['id']; ?>"  class="btn btn-danger"><span class="fa fa-trash"></span></a>
+                  <a href="farmers_view.php?edited=1&idx=<?php echo $row['id']; ?>"  class="btn btn-danger"><span class="fa fa-trash"></span></a>
                               </td>  
                           </tr>
                           <?php
@@ -86,7 +86,7 @@
                     <strong> Successfully! </strong><?php echo'Record Successfully Deleted';?></div>
                    <script>
                        setTimeout(function () {
-                        window.location.href = "farms_view.php";
+                        window.location.href = "farmers_view.php";
                         }, 5000); 
                       
                     </script>

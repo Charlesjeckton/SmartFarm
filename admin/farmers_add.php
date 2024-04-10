@@ -80,7 +80,7 @@ require_once('../connect/session.php');
                 <div class="card">
                     <p class="card-header deveops-cj">Add Farmers </p>
                     <div class="card-body">
-                        <form action="farms_add.php" method="post">
+                        <form action="farmers_add.php" method="post">
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <label>Name</label>
@@ -89,7 +89,7 @@ require_once('../connect/session.php');
 
                                 <div class="col-md-6 form-group">
                                     <label>Phone</label>
-                                    <input type="text" name="phone" class="form-control" pattern="[0-0]{1,1}[7-7]{1,1}[1-9]{2,2}[0-9]{6,6}" maxlength="20" placeholder="0774328908" required>
+                                    <input type="text" name="phone" class="form-control" pattern="0[17][0-9]{8}" maxlength="20" placeholder="0774328908" required>
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <label>Region</label>

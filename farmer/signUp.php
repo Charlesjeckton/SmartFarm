@@ -98,7 +98,7 @@ require_once('../connect/database.php');
 
             <div class=" form-group">
                 <label>Phone:</label>
-                <input type="text" name="phone" class="form-control" pattern="[0-0]{1,1}[7-7]{1,1}[1-9]{2,2}[0-9]{6,6}"
+                <input type="text" name="phone" class="form-control" pattern="0[17][0-9]{8}"
                     maxlength="20" placeholder="0774328908" required>
             </div>
             <div class=" form-group">
@@ -121,7 +121,7 @@ require_once('../connect/database.php');
             </div>
             <div class=" form-group">
                 <label>Password:</label>
-                <input type="password" name="password" class="form-control" maxlength="20" placeholder="" required>
+                <input type="password" name="password" class="form-control" maxlength="20"  placeholder="" required>
             </div>
             <div class="form-group">
                 <button type="submit" name="submit" class="btn btn-success btn-block"> Submit</button>

@@ -51,11 +51,11 @@
             <a href="#pageSubmenuRue"  data-toggle="collapse" aria-expanded="false" class="fa fa-user-circle-o dropdown-toggle"> Farmers</a>
             <ul class="collapse list-unstyled" id="pageSubmenuRue">
                 <li>
-                    <a href="farms_add.php">Add</a>
+                    <a href="farmers_add.php">Add</a>
                 </li>
 
                 <li>
-                    <a href="farms_view.php">View</a>
+                    <a href="farmers_view.php">View</a>
                 </li>
             </ul>
         </li>
